@@ -7,26 +7,30 @@
 /*container*/
 .container {
     display: flex;
+    flex-direction: column;
+
     margin-left: auto;
     margin-right: auto;
-    flex-direction: column;
 }
 
 /*nav*/
 nav {
     background-color: #add8e6;
-    display: flex;
-    padding: 16px;
-    width: 100%;
 
+    display: flex;
+
+    width: 100%;
+    padding: 16px;
 }
 
 nav>div {
     display: flex;
-    background-color: #daa520;
-    padding-top: 8px;
-    padding-bottom: 8px;
+
     border: 2px black dashed;
+    background-color: #daa520;
+
+    padding-bottom: 8px;
+    padding-top: 8px;
 }
 
 nav div.link {
@@ -67,9 +71,8 @@ header>div {
     background-color: #ee82ee;
     border: 2px black dashed;
 
-    padding-top: 320px;
-
     width: 750px;
+    padding-top: 320px;
 }
 
 hr {
@@ -88,47 +91,105 @@ main {
 
 main>div {
     display: flex;
-    height: 470px;
-    width: 100%;
     justify-content: center;
     align-items: center;
+
+    height: 470px;
+    width: 100%;
 
     background-color: #ffffff;
 }
 
 main div.image {
     display: inline-block;
+
     background-color: #1e90ff;
     border: 2px black dashed;
 
-    padding-top: 380px;
-
     width: 550px;
+    padding-top: 380px;
 }
 
 main div.text {
     display: inline-block;
+
     border: 2px black dashed;
     background-color: #ffc0cb;
 
-    padding-top: 380px;
-
     width: 350px;
+    padding-top: 380px;
 }
 
 main div.section2 {
     flex-direction: row-reverse;
+
     background-color: #d3d3d3;
 }
 
+/* section 4*/
 main div.section4 {
     background-color: #d3d3d3;
+
     height: 800px;
 }
 
 main div.box {
     width: 900px;
     padding-top: 700px;
+
     background-color: #228b22;
     border: 2px black dashed;
 }
+
+/*end main sections*/
+
+/*start footer navbar*/
+footer .footer-nav {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 550px;
+
+    background-color: #23272a;
+    border-bottom: #9d9d9d solid 2px;
+}
+
+footer .footer-box {
+    display: flex;
+
+    align-self: center;
+    justify-items: center;
+
+    width: 300px;
+    padding-bottom: 480px;
+    margin-bottom: 40px;
+
+    background-color: #f08080;
+    border: black dashed 2px;
+}
+
+footer .column-container {
+    display: flex;
+    align-self: center;
+
+    width: 600px;
+    margin-bottom: 40px;
+
+    background-color: #1e90ff;
+    border: black dashed 2px;
+}
+
+.column {
+    width: calc(100% / 4);
+    padding-bottom: 480px;
+
+    border: white dashed 2px;
+}
+
+footer>hr {
+    display: block;
+    flex-direction: row;
+}
+
+/*end footer navbar*/
