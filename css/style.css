@@ -70,7 +70,6 @@ header>div {
     padding-top: 320px;
 
     width: 750px;
-
 }
 
 hr {
@@ -78,3 +77,58 @@ hr {
 }
 
 /*header's end*/
+
+/*main sections*/
+main {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+main>div {
+    display: flex;
+    height: 470px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+}
+
+main div.image {
+    display: inline-block;
+    background-color: #1e90ff;
+    border: 2px black dashed;
+
+    padding-top: 380px;
+
+    width: 550px;
+}
+
+main div.text {
+    display: inline-block;
+    border: 2px black dashed;
+    background-color: #ffc0cb;
+
+    padding-top: 380px;
+
+    width: 350px;
+}
+
+main div.section2 {
+    flex-direction: row-reverse;
+    background-color: #d3d3d3;
+}
+
+main div.section4 {
+    background-color: #d3d3d3;
+    height: 800px;
+}
+
+main div.box {
+    width: 900px;
+    padding-top: 700px;
+    background-color: #228b22;
+    border: 2px black dashed;
+}
