@@ -6,50 +6,52 @@
 
 /*container*/
 .container {
-    display: flex;
-    flex-direction: column;
-
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
 /*nav*/
+
 nav {
-    background-color: #add8e6;
-
-    display: flex;
-
-    width: 100%;
     padding: 16px;
+
+    background-color: #add8e6;
 }
 
-nav>div {
+nav .container {
     display: flex;
+    justify-content: space-between;
 
-    border: 2px black dashed;
     background-color: #daa520;
-
-    padding-bottom: 8px;
-    padding-top: 8px;
 }
 
-nav div.link {
+nav .container>* {
+    border: dashed 2px black;
+
+    padding: 10px;
+}
+
+nav .logo {
+    width: 100px;
+    text-align: left;
+}
+
+nav .link {
     flex-grow: 1;
+}
+
+nav .link ul {
+    display: flex;
     justify-content: center;
+    gap: 12px;
+
+    list-style-type: none;
 }
 
-nav div.logo {
-    padding-right: 150px;
-    padding-left: 5px;
-    margin-left: 230px;
-
-}
-
-nav div.login {
-    padding-left: 150px;
-    padding-right: 5px;
-    margin-right: 230px;
-
+nav .login {
+    width: 100px;
+    text-align: right;
 }
 
 /*nav's end*/
@@ -71,8 +73,8 @@ header>div {
     background-color: #ee82ee;
     border: 2px black dashed;
 
-    width: 750px;
-    padding-top: 320px;
+    max-width: 750px;
+    height: 300px;
 }
 
 hr {
